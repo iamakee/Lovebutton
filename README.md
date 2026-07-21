@@ -12,3 +12,7 @@ Run `npm run dev` and open `http://localhost:3000`.
 4. On the iPhone, open `http://YOUR_MAC_IP:3000` in Safari (for example, `http://192.168.1.25:3000`).
 
 If macOS asks about incoming connections, allow Node. Safari will automatically use the responsive layout.
+
+## Photos for deployment
+
+The site serves its files from `public/assets`. Put any new photos there, then update `data/memories.ts` with a URL beginning `/assets/`.
