@@ -8,7 +8,7 @@ export const memories: Memory[] = [
 
   { title: 'Cute photo with niko', date: '20/06/2026', story: 'Met our son(affan) and had one of our cutest photo.', quote: 'cats arent that bad.', image: '/assets/IMG_3550.jpeg', accent: 'cream' },
   { title: 'Our First KISSSS!!!!', date: '23/06/2026', story: 'It was funny how shy we both got as we left the photobooth.', quote: 'Ohoo cant wait for the next first kiss (^_~).', image: '/assets/firs.jpg', accent: 'blush' },
-  { title: 'Our First KISSSS!!!!', date: '23/06/2026', story: 'It was funny how shy we both got as we left the photobooth.', quote: 'Ohoo cant wait for the next first kiss (^_~).', image: '/assets/Ily%20phone%20call/IMG_4092.PNG', accent: 'blush' },
+  { title: 'Our no MY first i love you', date: '27/06/2026', story: 'OMG what a fool you made of my how dumbfounded i was when i said i love you and you replied with "yes yes i will say it later" AND then i go and say it again on our next video call LMAOO!! that shit was funny but it only made the moment when you actually said i love you even better.', quote: 'Ohoo cant wait for the next first kiss (^_~).', image: '/assets/Ily%20phone%20call/IMG_4092.PNG', accent: 'blush' },
   { title: 'Our First KISSSS!!!!', date: '23/06/2026', story: 'It was funny how shy we both got as we left the photobooth.', quote: 'Ohoo cant wait for the next first kiss (^_~).', image: '/assets/Ily%20phone%20call/IMG_4092.PNG', accent: 'blush' },
 
 ];
