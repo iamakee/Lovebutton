@@ -15,4 +15,4 @@ If macOS asks about incoming connections, allow Node. Safari will automatically 
 
 ## Photos for deployment
 
-The site serves its files from `public/assets`. Put any new photos there, then update `data/memories.ts` with a URL beginning `/assets/`.
+The site serves its files from `public/assets`. Put any new photos or videos there, then update `data/memories.ts` or `data/comfort.ts` with a URL beginning `/assets/`. In `data/comfort.ts`, use `media: { type: 'image', src: '/assets/photo.jpg' }` for a photo, or `media: { type: 'video', src: '/assets/video.mp4' }` for a looping video.

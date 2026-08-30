@@ -1,19 +1,30 @@
-export const missMeMoments = [
+export type MomentMedia = {
+  type: 'image' | 'video';
+  src: string;
+};
+
+export type MissMeMoment = {
+  title: string;
+  text: string;
+  media?: MomentMedia;
+};
+
+export const missMeMoments: MissMeMoment[] = [
   {
     title: 'A little reminder',
     text: 'Add a small memory here — something that always makes you smile.',
-    // Put the image file in public/assets, then use its path here, e.g. '/assets/us-at-the-beach.jpg'.
-    image: '',
+    // Put the file in public/assets. Videos play muted and loop automatically.
+    media: { type: 'video', src: '/assets/cofvid.MOV' },
   },
   {
     title: 'One of our days',
     text: 'This can be a photo and a few words about the day it was taken.',
-    image: '',
+    // Example: media: { type: 'image', src: '/assets/us-at-the-beach.jpg' },
   },
   {
     title: 'Until I can hug you',
     text: 'Leave a note here for the days when the distance feels a little louder.',
-    image: '',
+    // Example: media: { type: 'video', src: '/assets/our-little-video.mp4' },
   },
 ];
 

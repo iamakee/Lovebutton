@@ -17,8 +17,12 @@ export default function MissMePage() {
         <section className="mt-16 grid gap-7 sm:grid-cols-3" aria-label="Little memories to add">
           {missMeMoments.map((moment, index) => (
             <article key={moment.title} className="glass overflow-hidden rounded-[1.5rem] p-3">
-              {moment.image ? (
-                <img src={moment.image} alt={moment.title} className="aspect-[4/5] w-full rounded-[1rem] object-cover" />
+              {moment.media?.type === 'video' ? (
+                <video autoPlay loop muted playsInline preload="metadata" className="aspect-[4/5] w-full rounded-[1rem] object-cover" aria-label={moment.title}>
+                  <source src={moment.media.src} />
+                </video>
+              ) : moment.media?.type === 'image' ? (
+                <img src={moment.media.src} alt={moment.title} className="aspect-[4/5] w-full rounded-[1rem] object-cover" />
               ) : (
                 <div className="photo-placeholder flex aspect-[4/5] items-center justify-center rounded-[1rem] border border-dashed border-[#bcae94] px-6 text-center text-xs leading-5 text-[#8b8578]">
                   Add photo {index + 1} here
@@ -32,7 +36,7 @@ export default function MissMePage() {
           ))}
         </section>
 
-        <p className="mt-12 text-center text-xs leading-5 text-[#8b8578]">You can add your photos and words in <code>data/comfort.ts</code>.</p>
+        <p className="mt-12 text-center text-xs leading-5 text-[#8b8578]">You can add your photos, videos, and words in <code>data/comfort.ts</code>.</p>
         <div className="mt-9 text-center"><Link href="/mails" className="inline-flex min-h-11 items-center rounded-full border border-[#cbb29a] bg-white/65 px-6 py-3 text-sm text-[#556154] shadow-sm">There&apos;s a mail waiting too</Link></div>
       </div>
     </main>
