@@ -15,14 +15,15 @@ export default function MissMePage() {
         </header>
 
         <section className="mt-16 grid gap-7 sm:grid-cols-3" aria-label="Little memories to add">
-          {missMeMoments.map((moment, index) => (
-            <article key={moment.title} className="glass overflow-hidden rounded-[1.5rem] p-3">
-              {moment.media?.type === 'video' ? (
+          {missMeMoments.map((moment, index) => {
+            const isVideo = /\.(mov|mp4|webm)$/i.test(moment.image ?? '');
+            return <article key={moment.title} className="glass overflow-hidden rounded-[1.5rem] p-3">
+              {isVideo ? (
                 <video autoPlay loop muted playsInline preload="metadata" className="aspect-[4/5] w-full rounded-[1rem] object-cover" aria-label={moment.title}>
-                  <source src={moment.media.src} />
+                  <source src={moment.image} />
                 </video>
-              ) : moment.media?.type === 'image' ? (
-                <img src={moment.media.src} alt={moment.title} className="aspect-[4/5] w-full rounded-[1rem] object-cover" />
+              ) : moment.image ? (
+                <img src={moment.image} alt={moment.title} className="aspect-[4/5] w-full rounded-[1rem] object-cover" />
               ) : (
                 <div className="photo-placeholder flex aspect-[4/5] items-center justify-center rounded-[1rem] border border-dashed border-[#bcae94] px-6 text-center text-xs leading-5 text-[#8b8578]">
                   Add photo {index + 1} here
@@ -32,8 +33,8 @@ export default function MissMePage() {
                 <h2 className="serif text-3xl text-[#4b5a4d]">{moment.title}</h2>
                 <p className="mt-3 text-sm leading-6 text-[#6c756c]">{moment.text}</p>
               </div>
-            </article>
-          ))}
+            </article>;
+          })}
         </section>
 
         <p className="mt-12 text-center text-xs leading-5 text-[#8b8578]">You can add your photos, videos, and words in <code>data/comfort.ts</code>.</p>
