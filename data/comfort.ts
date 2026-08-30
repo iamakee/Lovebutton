@@ -2,6 +2,7 @@ export const missMeMoments = [
   {
     title: 'A little reminder',
     text: 'Add a small memory here — something that always makes you smile.',
+    // Put the image file in public/assets, then use its path here, e.g. '/assets/us-at-the-beach.jpg'.
     image: '',
   },
   {
@@ -16,13 +17,30 @@ export const missMeMoments = [
   },
 ];
 
-export const letter = {
-  date: 'For the days you need it most',
-  greeting: 'My dearest Aru,',
-  paragraphs: [
-    'Write your letter here. This space is yours — make it as long, soft, silly, or honest as you want it to be.',
-    'You can add another paragraph here whenever you want to leave her a new little piece of your heart.',
-  ],
-  signOff: 'Always yours,',
-  signature: 'Vishwa',
+export type Letter = {
+  slug: string;
+  subject: string;
+  preview: string;
+  date: string;
+  greeting: string;
+  paragraphs: string[];
+  signOff: string;
+  signature: string;
 };
+
+// Add future letters by copying this whole object and giving it a unique slug.
+export const letters: Letter[] = [
+  {
+    slug: 'a-little-note-for-you',
+    subject: 'A little note for you',
+    preview: 'For the days you need it most.',
+    date: 'For the days you need it most',
+    greeting: 'My dearest Aru,',
+    paragraphs: [
+      'Write your letter here. This space is yours — make it as long, soft, silly, or honest as you want it to be.',
+      'You can add another paragraph here whenever you want to leave her a new little piece of your heart.',
+    ],
+    signOff: 'Always yours,',
+    signature: 'Vishwa',
+  },
+];
