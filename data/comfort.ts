@@ -31,7 +31,7 @@ export type Letter = {
 // Add future letters by copying this whole object and giving it a unique slug.
 export const letters: Letter[] = [
   {
-    slug: 'a-little-note-for-you',
+    slug: 'a-s-note-for-you',
     subject: 'A little note for you',
     preview: 'For the days you need it most.',
     date: 'For the days you need it most',
