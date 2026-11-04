@@ -20,7 +20,9 @@ export default function LetterPage({ params }: { params: { slug: string } }) {
           <p className="relative text-right text-xs italic text-[#887864]">{letter.date}</p>
           <div className="relative mt-10 font-[Caveat,'Comic_Sans_MS',cursive] text-[1.28rem] leading-9 text-[#585a4d] sm:text-[1.45rem] sm:leading-10">
             <p>{letter.greeting}</p>
-            {letter.paragraphs.map((paragraph) => <p key={paragraph} className="mt-7">{paragraph}</p>)}
+            {letter.body.split('\n\n').map((paragraph, index) => (
+              <p key={index} className="mt-7 whitespace-pre-line">{paragraph}</p>
+            ))}
             <p className="mt-10">{letter.signOff}<br /><span className="text-3xl text-[#9d7069]">{letter.signature}</span></p>
           </div>
         </article>

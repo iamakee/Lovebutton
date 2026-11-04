@@ -15,4 +15,15 @@ export const memories: Memory[] = [
   { title: 'House Party', date: '11/07/2026', story: 'We Danced like crazy! i mean you danced good i danced crazy and then the scooty ride home was love', quote: 'How scared you were to talk to my mom LMAOOO!!', image: '/memories/memory-11.webp', accent: 'blush' },
   { title: 'Arangetram', date: '13/07/2026', story: 'Toppp dayy had funn got cute photos', quote: 'Looked too pretty in that saree', image: '/memories/memory-12.webp', accent: 'blush' },
   { title: 'The SEE YOUU SOON', date: '14/07/2026', story: 'How Funny it was when you forgot that i was leaving the day after LMAOO but we got to spend time together thats what matters and we had a good time', quote: 'Missing you a lot!! cant wait to meet you again', image: '/memories/memory-13.webp', accent: 'blush' },
+  { title: 'FINALLY SAW YOU AGAINNN!!!', date: '29/10/2026', story: 'hehehe thankfully there were no "hmmmmms"', quote: 'it was all worth it', image: '/memories/memory-14.webp', accent: 'blush' },
+  { title: 'THE SURPRISEE!!', date: '30/10/2026', story: 'hehehe finally got to execute the surprise i had been planning for months', quote: 'your shocked reaction was cutest', image: '/memories/memory-15.webp', accent: 'blush' },
+  { title: 'the DATEE atlaaaas', date: '30/10/2026', story: 'finally went on a proper date, might not have been how we planned but the ending was perfect', quote: 'want to kiss you again hehehe', image: '/memories/memory-16.webp', accent: 'blush' },
+  { title: 'talli aru', date: '31/10/2026', story: "'I am completely in my sense' ~aru", quote: 'i love talli aru', image: '/memories/memory-17.webp', accent: 'blush' },
+  { title: 'the sleepover crashers', date: '01/11/2026', story: 'felt kinda bad about crashing the sleepover again but your morning face was soooo cutee i would do it a thousand times again', quote: 'sleepy aru on top', image: '/memories/memory-18.webp', accent: 'blush' },
+  { title: 'Naturals our GOATT', date: '02/11/2026', story: 'Love naturals and soft launching to haseena mam', quote: 'why tf will you hold your own bag if i am there 😡', image: '/memories/memory-19.webp', accent: 'blush' },
+  { title: 'Our first drive', date: '03/11/2026', story: 'loved the ride loved the passenger princess loved everything', quote: 'no one wears traditionals better than you', image: '/memories/memory-20.webp', accent: 'blush' },
+  { title: 'SEE YOU SOON PT 2', date: '04/11/2026', story: '1 month more and the power couple will be back in business', quote: 'reminder : brush if you have eaten garlic', image: '/memories/memory-21.webp', accent: 'blush' },
+
+
+
 ];
