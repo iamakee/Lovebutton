@@ -16,8 +16,8 @@ export default function MailsPage() {
           {letters.map((letter, index) => (
             <Link key={letter.slug} href={`/mails/${letter.slug}`} className="group glass flex items-center gap-4 rounded-[1.35rem] p-4 text-left transition-transform duration-200 hover:-translate-y-0.5 sm:p-5">
               <div className="mini-envelope relative grid h-16 w-20 shrink-0 place-items-center rounded-md shadow-sm"><span className="relative z-10 text-[#91685d]">♥</span></div>
-              <div className="min-w-0 flex-1"><p className="text-[10px] uppercase tracking-[.18em] text-[#a48870]">Letter {index + 1}</p><h2 className="serif mt-1 truncate text-3xl text-[#4b5a4d]">{letter.subject}</h2><p className="mt-1 truncate text-sm text-[#727a70]">{letter.preview}</p></div>
-              <span className="text-xl text-[#aa8176] transition-transform group-hover:translate-x-1">›</span>
+              <div className="min-w-0 flex-1"><p className="text-[10px] uppercase tracking-[.18em] text-[#a48870]">Letter {index + 1}</p><h2 className="serif mt-1 text-2xl leading-tight text-[#4b5a4d] sm:text-3xl">{letter.subject}</h2><p className="mt-1 line-clamp-2 text-sm leading-5 text-[#727a70]">{letter.preview}</p></div>
+              <span className="shrink-0 text-xl text-[#aa8176] transition-transform group-hover:translate-x-1">›</span>
             </Link>
           ))}
         </section>

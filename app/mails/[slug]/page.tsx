@@ -18,7 +18,7 @@ export default function LetterPage({ params }: { params: { slug: string } }) {
         <article className="handmade-letter relative mt-10 overflow-hidden rounded-sm px-7 py-12 shadow-[0_18px_45px_rgba(78,60,37,.22)] sm:px-14 sm:py-16">
           <Lily className="absolute -right-8 -top-8 opacity-20" size={150} />
           <p className="relative text-right text-xs italic text-[#887864]">{letter.date}</p>
-          <div className="relative mt-10 font-[Caveat,'Comic_Sans_MS',cursive] text-[1.28rem] leading-9 text-[#585a4d] sm:text-[1.45rem] sm:leading-10">
+          <div className="letter-body relative mt-10 text-[1.28rem] leading-9 text-[#585a4d] sm:text-[1.45rem] sm:leading-10">
             <p>{letter.greeting}</p>
             {letter.body.split('\n\n').map((paragraph, index) => (
               <p key={index} className="mt-7 whitespace-pre-line">{paragraph}</p>
